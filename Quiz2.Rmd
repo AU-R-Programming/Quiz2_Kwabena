@@ -1,4 +1,11 @@
-#Luigi
+---
+title: "Quiz2"
+author: "Kwabena Bayity"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r,echo = TRUE}
 
 
 # Question 1: Leading CovidData
@@ -46,7 +53,6 @@ print(count_cases)
 
 # Question 7: Add Age Column
 covid_data$Age <- as.integer((Sys.Date() - as.Date(covid_data$Date.of.birth, format="%Y-%m-%d")) / 365)
-
 #Viewed covid_data$Age to check if i am on the right path
 print(covid_data$Age)
 
@@ -102,5 +108,8 @@ evaluate_risk <- function(new_covid) {
 }
  print(risk_model)
  
+
  print(risk_level)
- 
+
+```
+
